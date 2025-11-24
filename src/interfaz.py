@@ -18,11 +18,15 @@ def cerrar_chromium():
 
 def abrir_netflix():
     try:
+        global screenwidth
+        global screenheight
         # Abrir Chromium en pantalla completa con barra de título
         subprocess.Popen([
             "chromium",
             "--start-fullscreen",
             "--kiosk",
+            "--window-position=0,0",
+            f"--window-size={screenwidth},{screenheight}",
             "https://www.netflix.com/mx"
         ])
     except Exception as e:
@@ -31,11 +35,15 @@ def abrir_netflix():
 
 def abrir_disney():
     try:
+        global screenwidth
+        global screenheight
         # Abrir Chromium en pantalla completa con barra de título
         subprocess.Popen([
             "chromium",
             "--start-fullscreen",
             "--kiosk",
+            "--window-position=0,0",
+            f"--window-size={screenwidth},{screenheight}",
             "https://www.disneyplus.com/es-mx"
         ])
     except Exception as e:
@@ -43,11 +51,15 @@ def abrir_disney():
 
 def abrir_spoti():
     try:
+        global screenwidth
+        global screenheight
         # Abrir Chromium en pantalla completa con barra de título
         subprocess.Popen([
             "chromium",
             "--start-fullscreen",
             "--kiosk",
+            "--window-position=0,0",
+            f"--window-size={screenwidth},{screenheight}",
             "https://open.spotify.com/intl-es"
         ])
     except Exception as e:
@@ -55,11 +67,15 @@ def abrir_spoti():
 
 def abrir_youtube():
     try:
+        global screenwidth
+        global screenheight
         # Abrir Chromium en pantalla completa con barra de título
         subprocess.Popen([
             "chromium",
             "--start-fullscreen",
             "--kiosk",
+            "--window-position=0,0",
+            f"--window-size={screenwidth},{screenheight}",
             "https://music.youtube.com/"
         ])
     except Exception as e:
