@@ -66,7 +66,7 @@ USER=multimedia
 
 #Creacion de directorios
 MULTIMEDIAPP_HOME=/home/${USER}/
-mkdir -p $MULTIMEDIAPP_HOME
+mkdir -p $MULTIMEDIAPP_HOME/logos
 
 cp ../src/* $MULTIMEDIAPP_HOME
 
