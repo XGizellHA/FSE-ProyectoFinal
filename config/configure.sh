@@ -65,7 +65,7 @@ systemctl stop bluetooth
 USER=multimedia
 
 #Creacion de directorios
-MULTIMEDIAPP_HOME=/home/${USER}/multimediaapp
+MULTIMEDIAPP_HOME=/home/${USER}/
 mkdir -p $MULTIMEDIAPP_HOME
 
 cp ../src/* $MULTIMEDIAPP_HOME
@@ -76,7 +76,7 @@ cd /home/${USER}
 cat > /home/${USER}/.xinitrc << EOF
 #!/bin/bash
 sleep 1
-python3 ${MULTIMEDIAPP_HOME}/interfaz2.py
+python3 ${MULTIMEDIAPP_HOME}/main.py
 wait
 EOF
 
